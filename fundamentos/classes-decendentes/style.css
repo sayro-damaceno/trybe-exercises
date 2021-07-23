@@ -1,0 +1,39 @@
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+li {
+    font-size: 20px;
+}
+
+ol li {
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+.itens-pares {
+    color: green;
+    text-transform: none;
+}
+
+li em {
+    font-weight: 700;
+}
+
+.linguage-blue {
+    color: blue;
+}
+
+.linguage-background-pink {
+    background-color: pink;    
+}
+
+a:hover {
+    font-weight: 700;
+    color: red;
+}
