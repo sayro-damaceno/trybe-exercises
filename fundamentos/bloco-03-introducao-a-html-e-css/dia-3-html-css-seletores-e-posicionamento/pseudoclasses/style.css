@@ -1,0 +1,23 @@
+div:hover {
+    border: solid;
+}
+.red {
+    color: red;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+    padding: 2em 2em;
+
+}
+.black {
+    color: black;
+}
+.aquamarine {
+    color: aquamarine;
+}
+.italic-text {
+    font-style: italic;
+}
