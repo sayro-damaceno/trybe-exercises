@@ -1,14 +1,56 @@
 .header {
-    border: 1px black solid;
-    
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 
 .links-nav {
-    border: 1px black solid;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+
 }
 
 .links-nav ul li {
     display: inline-block;
     padding: 10px;
+}
+.links-nav ul li a:hover, a:visited, a:active, a:link {
+    color: red;
+    text-decoration: none;
+}
+.main {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.article {
+    display: inline-block;
+    width: 70%;
+    display: inline-block;
+    text-align: justify
+}
+.referencia-bibliografica{
+    font-size: 12px;
+}
+.side {
     border: 1px black solid;
+    width: 25%;
+    display: inline-block;
+    position: absolute; 
+    height: 200px; 
+    text-align: center;      
+}
+.side p {
+    margin-top: 70px;
+}
+.footer {
+    border: 1px black solid;
+    font-size: 10px;
+    margin-top: 100px;
+}
+table {
+    text-align: center;
+}
+table tr, th {
+    padding: 20px;
 }
