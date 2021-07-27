@@ -1,0 +1,14 @@
+.header {
+    border: 1px black solid;
+    
+}
+
+.links-nav {
+    border: 1px black solid;
+}
+
+.links-nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px black solid;
+}
