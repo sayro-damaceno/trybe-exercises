@@ -7,5 +7,5 @@ let info = {
 info.recorrente = "sim";
 
 for (let key in info) {
-  console.log(key)
+  console.log(info[key])
 }
