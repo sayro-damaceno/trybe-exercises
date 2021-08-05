@@ -11,4 +11,4 @@ function higherNumber(array) {
 function highestNumberIndex(array) {
   return array.indexOf(higherNumber(array))
 }
-console.log(highestNumberIndex([2, 3, 60, 7, 10, 17]))
+console.log(highestNumberIndex([2, 3, 60, 7, 60, 17]))
