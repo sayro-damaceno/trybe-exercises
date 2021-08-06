@@ -1,5 +1,4 @@
 function numberRepet(array) {
-  // let array = [1, 4, 8, 5, 8, 2, 3]
   let cont2 = 0;
   let num = 0;
   for (let i = 0; i < array.length; i += 1) {
