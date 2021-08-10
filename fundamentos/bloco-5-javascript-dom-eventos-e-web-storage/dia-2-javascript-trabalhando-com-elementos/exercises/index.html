@@ -66,16 +66,28 @@
       main.className = 'main-content';
       body.appendChild(main);
 
-      let mainContent = document.querySelector('.main-content');
       let sectionCenter = document.createElement('section');
       sectionCenter.className = 'center-content';
-      mainContent.appendChild(sectionCenter);
+      main.appendChild(sectionCenter);
 
-      let sectionCenterContent = document.querySelector('.center-content');
       let p = document.createElement('p');
-      sectionCenterContent.appendChild(p);
+      p.innerText = 'Cria elemento P'
+      sectionCenter.appendChild(p);
 
+      let sectionLeft = document.createElement('section');
+      sectionLeft.className = 'left-content'
+      main.appendChild(sectionLeft);
 
+      let sectionRight = document.createElement('section');
+      sectionRight.className = 'right-content';
+      main.appendChild(sectionRight);
+
+      let imagenLeft = document.createElement('img');
+      imagenLeft.src = 'https://picsum.photos/200';
+      imagenLeft.className = 'small-image';
+      sectionLeft.appendChild(imagenLeft);
+
+      
     </script>
   </body>
 </html>
