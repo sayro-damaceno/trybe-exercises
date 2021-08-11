@@ -87,7 +87,38 @@
       imagenLeft.className = 'small-image';
       sectionLeft.appendChild(imagenLeft);
 
-      
+      let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let index = 0; index < numeros.length; index += 1) {
+        let numero = numeros[index];
+        let itemLista = document.createElement('li');
+        itemLista.innerText = numero;
+        sectionRight.appendChild(itemLista);
+      }
+
+      let h3primeira = document.createElement('h3');
+      main.appendChild(h3primeira);
+      let h3segunda = document.createElement('h3');
+      main.appendChild(h3segunda);
+      let h3terceira = document.createElement('h3');
+      main.appendChild(h3terceira);
+
+      h1Title.className = 'title'
+
+      h3primeira.className = 'description';
+      h3segunda.className = 'description';
+      h3terceira.className = 'description';
+
+      main.removeChild(sectionLeft);
+
+      sectionRight.style.marginRight = 'auto';
+
+      main.style.backgroundColor = 'green';
+
+      let ultimoLi = document.getElementsByTagName('li')[9];
+      let penultimoLi = document.getElementsByTagName('li')[8];
+
+      sectionRight.removeChild(ultimoLi);
+      sectionRight.removeChild(penultimoLi);
     </script>
   </body>
 </html>
