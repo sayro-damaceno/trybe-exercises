@@ -82,6 +82,40 @@ function mudarTextoFriday() {
 buttonFriday.addEventListener('click', mudarTextoFriday);
 
 // Exercício 6:
-// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-let diasDoMes = document.getElementsByClassName('day');
+function zoomIn(evt) {
+  evt.target.style.transitionDuration = '0.4s';
+  evt.target.style.fontSize = '40px';
+}
 
+days.addEventListener('mouseover', zoomIn);
+
+function zoomOut(evt) {
+  evt.target.style.transitionDuration = '0.4s';
+  evt.target.style.fontSize = '20px';
+}
+
+days.addEventListener('mouseout', zoomOut);
+
+// Exercício 7:
+let myTasks = document.getElementsByClassName('my-tasks')[0]
+let spanTask = document.createElement('span');
+
+function createTask(task) {
+  spanTask.innerText = task;
+  myTasks.appendChild(spanTask);
+}
+
+createTask('Estudar:');
+
+// Exercício 8:
+let divTask = document.createElement('div');
+
+function creatTaskColor(color){
+  divTask.className = 'task';
+  divTask.style.backgroundColor = color;
+  myTasks.appendChild(divTask);
+}
+
+creatTaskColor('green');
+
+// Exercício 9:
