@@ -119,3 +119,26 @@ function creatTaskColor(color){
 creatTaskColor('green');
 
 // Exercício 9:
+let selectedTask = document.getElementsByClassName('task selected');
+let taskColor = document.querySelector('.task');
+
+function selectTask(event) {
+  if (selectedTask.length === 0) {
+    event.target.className = 'task selected';
+  } else {
+    event.target.className = 'task';
+  }
+}
+
+taskColor.addEventListener('click', selectTask)
+
+// Exercício 10:
+function markDay(event) {
+  if (taskColor.className === 'task selected') {
+    event.target.style.color = taskColor.style.backgroundColor
+  } else {
+    event.target.style.color = 'rgb(119,119,119)'
+  }
+}
+
+days.addEventListener('click', markDay);
