@@ -51,17 +51,24 @@ document.querySelector('input').addEventListener('keyup', button);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
 
+myWebpage.addEventListener('dblclick', function() {
+  window.location.replace('https://sayro-damaceno.github.io/');
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
-let spotrybefy = document.getElementById('my-spotrybefy');
-
 function mudaCor() {
-  spotrybefy.style.color = 'yellow'
+  myWebpage.style.color = 'yellow'
 }
 
-spotrybefy.addEventListener('mouseover', mudaCor);
+myWebpage.addEventListener('mouseover', mudaCor);
+
+function tirarCor(event) {
+  event.target.style.color = 'unset'
+}
+
+myWebpage.addEventListener('mouseout', tirarCor);
 
 // Segue abaixo um exemplo do uso de event.target:
 

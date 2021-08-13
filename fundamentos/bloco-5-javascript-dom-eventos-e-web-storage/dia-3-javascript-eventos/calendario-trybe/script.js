@@ -66,3 +66,22 @@ let buttonFriday = document.getElementsByTagName('button')[1];
 buttonFriday.id = 'btn-friday'
 
 // Exercício 5:
+let fridays = document.querySelectorAll('.friday');
+let day = [4, 11, 18, 25]
+
+function mudarTextoFriday() {
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerText === 'Sextouu!') {
+      fridays[index].innerText = day[index];
+    } else {
+      fridays[index].innerText = 'Sextouu!';
+    }
+  } 
+}
+
+buttonFriday.addEventListener('click', mudarTextoFriday);
+
+// Exercício 6:
+// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+let diasDoMes = document.getElementsByClassName('day');
+
