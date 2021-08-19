@@ -1,0 +1,39 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  background-color: #f8f7f5;
+  color: rgb(27, 26, 26);
+}
+
+header {
+  text-align: center;
+}
+
+.box {
+  margin: auto;
+  margin-top: 20px;
+  border: black solid 1px;
+  padding: 50px;
+  width: 60%;
+  background-color: #f0ffff;
+}
+
+.div-dados {
+  padding: 10px;
+}
+
+#resume-summary {
+  width: 90%;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+legend {
+  font-size: 20px;
+}
