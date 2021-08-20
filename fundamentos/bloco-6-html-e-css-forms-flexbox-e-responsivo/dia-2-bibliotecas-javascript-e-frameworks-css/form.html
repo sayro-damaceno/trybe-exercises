@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Currículo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+</head>
+<body>
+  <header class="container">
+    <h1 class="display-4">Formulário de Cadastro de Currículo</h1>
+  </header>
+
+  <form class="container">
+    <legend>Dados Pessoais</legend>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="name" name="name" required maxlength="40">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+    </div>
+
+    <div class="mb-3">
+      <label for="cpf" class="form-label">CPF</label>
+      <input type="text" class="form-control" id="cpf" name="cpf" required maxlength="11">
+    </div>
+    
+    <div class="mb-3">
+      <label for="address" class="form-label">Endereço</label>
+      <input type="text" class="form-control" id="address" name="address" required maxlength="200">
+    </div>
+
+    <div class="mb-3">
+      <label for="city" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="city" name="city" required maxlength="28">
+    </div>
+    
+    <div class="mb-3">
+      <label>Estado</label>
+      <select name="estado" class="form-select" id="estados" required>
+      </select>
+    </div>  
+
+    <legend>Último Emprego</legend>
+
+    <div class="mb-3">
+      <label for="resume-summary" class="form-label">Resumo do currículo</label>
+      <textarea name="resume-summary" class="form-control" id="resume-summary" cols="30" rows="3" required maxlength="1000"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="office" class="form-label">Cargo</label>
+      <input type="text" class="form-control" id="office" name="office" required maxlength="40">
+    </div>
+    
+    <div class="mb-3">
+      <label for="job-description" class="form-label">Descrição do cargo</label>
+      <textarea name="job-description" class="form-control" id="job-description" cols="30" rows="3" required maxlength="500"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="datepicker" class="form-label">Data de início</label>
+      <input type="text" class="form-control" id="datepicker" name="start-date" required>
+    </div>
+
+    <button id="submit-button" class="btn btn-success" type="submit">Eviar</button>
+    <button id="clear-button" class="btn btn-warning" type="reset">Limpar Formulário</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
