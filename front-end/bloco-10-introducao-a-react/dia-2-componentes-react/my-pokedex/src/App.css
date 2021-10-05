@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+}
+
+.cards {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  justify-content: space-around;
+  background-color: rgb(220, 138, 228);
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+}
