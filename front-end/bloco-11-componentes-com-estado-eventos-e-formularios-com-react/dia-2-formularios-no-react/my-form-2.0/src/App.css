@@ -1,0 +1,13 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+label {
+  margin: 10px;
+}
+
+input {
+  margin-left: 10px;
+}
